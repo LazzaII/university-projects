@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+A:/Unipi/FDP EX/lab11/Palazzo.cpp
+Palazzo.h
+A:/Unipi/FDP EX/lab11/Palazzo.h
+
+A:/Unipi/FDP EX/lab11/Palazzo.h
+iostream
+-
+

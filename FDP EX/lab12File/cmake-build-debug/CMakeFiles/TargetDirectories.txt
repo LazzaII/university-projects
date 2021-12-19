@@ -1,0 +1,3 @@
+A:/Unipi/FDP EX/lab12File/cmake-build-debug/CMakeFiles/lab12File.dir
+A:/Unipi/FDP EX/lab12File/cmake-build-debug/CMakeFiles/edit_cache.dir
+A:/Unipi/FDP EX/lab12File/cmake-build-debug/CMakeFiles/rebuild_cache.dir

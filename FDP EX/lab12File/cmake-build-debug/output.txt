@@ -1,0 +1,2 @@
+Numero di valori letti:1
+Valore medio dei dati letti: 0
