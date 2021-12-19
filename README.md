@@ -4,4 +4,4 @@
 
 ---
 
-< Repo containing all the university project and exercise
+> Repo containing all the university project and exercise
