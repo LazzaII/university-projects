@@ -9,7 +9,7 @@ int main(){
     PuzzleBobble pb;
     pb.print();
 
-    /*cout << "Test funzione fire" << endl;
+    cout << "Test funzione fire" << endl;
     pb.fire(0,'R').fire(1,'R').fire(0,'B').fire(2,'Y');
     pb.fire(3,'Y').fire(3,'Y').fire(0,'B').fire(3,'G');
     pb.print();
@@ -32,7 +32,8 @@ int main(){
 
     cout << "Test funzione compact" << endl;
     pb.compact();
-    pb.print();*/
+    pb.print();
+
 
     return 0;
 }

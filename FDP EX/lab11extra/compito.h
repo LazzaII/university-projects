@@ -5,7 +5,7 @@
 #ifndef LAB11EXTRA_COMPITO_H
 #define LAB11EXTRA_COMPITO_H
 
-enum colori : char {R = 'R', G = 'G', B = 'B', Y = 'Y', vuoto = ' '};
+enum colori : char {R = 'R', G = 'G', B = 'B', Y = 'Y', shift = '=', vuoto = ' '};
 
 class PuzzleBobble {
 private:
@@ -16,10 +16,12 @@ private:
 public:
     PuzzleBobble();
 
+    int scoppiaBolle(unsigned int, unsigned int, char, bool);
+
     void print();
-    PuzzleBobble fire(int, char);
+    PuzzleBobble& fire(unsigned int, char);
     int height();
-    PuzzleBobble scroll();
+    PuzzleBobble& scroll();
     void compact();
 
 };
