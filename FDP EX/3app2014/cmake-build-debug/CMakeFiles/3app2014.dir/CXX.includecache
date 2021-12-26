@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+A:/Unipi/FDP EX/3app2014/compito.cpp
+compito.h
+A:/Unipi/FDP EX/3app2014/compito.h
+
+A:/Unipi/FDP EX/3app2014/compito.h
+iostream
+-
+
