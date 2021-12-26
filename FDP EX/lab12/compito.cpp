@@ -3,15 +3,17 @@
 //
 
 #include "compito.h"
-
+//UTILITÀ
 void VettoreSparso::elimina() {
-    nodo *tmp;
-    for(nodo *pos = p0; pos != nullptr;){
-        tmp = pos->prossimo;
-        delete pos;
-        pos = tmp;
+    nodo *i = p0;
+    while(i != 0){ // scorre tutta la lista fino all'ultimo elemento partendo dal primo
+        p0 = p0->prossimo; // l'inizio è uguale al successivo così che con il seguente delete si elimina quello precedente
+        delete i;
+        i = p0; // si assegna all'inidice l'inizio così da poterlo eliminare al giro dopo
     }
+    p0 = nullptr;
 }
+
 
 //PRIMA PARTE
 
@@ -47,7 +49,7 @@ void VettoreSparso::set(int v, unsigned int i) {
     }
 }
 
-ostream& operator<<(ostream& out, VettoreSparso vs) {
+ostream& operator<<(ostream& out, const VettoreSparso& vs) {
     out << "[" << vs.LF << "] { ";
     for(nodo* pos = vs.p0; pos != nullptr; pos = pos->prossimo)
         out << "(" << pos->val << "," << pos->pos << ")";
@@ -57,9 +59,6 @@ ostream& operator<<(ostream& out, VettoreSparso vs) {
 
 //SECONDA PARTE
 
-/*VettoreSparso::~VettoreSparso() {
-    elimina();
-}*/
 
 void VettoreSparso::visualizzaComeDenso() {
     int counter = 0;
@@ -90,14 +89,18 @@ void VettoreSparso::reset(unsigned int i) {
     delete pos;
 }
 
-VettoreSparso VettoreSparso::operator*=(int k) {
-    if (k == 0) {
+VettoreSparso& VettoreSparso::operator*=(int k) {
+    if (k == 0)
         elimina();
-        p0 = nullptr;
-    }
+
     nodo *pos;
     for (pos = p0; pos != nullptr; pos = pos->prossimo)
         pos->val *= k;
 
     return *this;
 }
+
+VettoreSparso::~VettoreSparso() {
+    elimina();
+}
+

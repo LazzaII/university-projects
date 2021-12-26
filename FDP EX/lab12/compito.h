@@ -20,18 +20,18 @@ private:
     nodo *p0;
     unsigned int LF;
 
+public:
     void elimina();
 
-public:
     VettoreSparso(unsigned int);
-    //~VettoreSparso();
+    ~VettoreSparso();
 
     void set(int,unsigned int);
     void visualizzaComeDenso();
     void reset(unsigned int);
 
-    friend ostream & operator<<(ostream&, VettoreSparso);
-    VettoreSparso operator*=(int);
+    friend ostream & operator<<(ostream&, const VettoreSparso&);
+    VettoreSparso & operator*=(int);
 
 };
 
