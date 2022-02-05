@@ -1,0 +1,4 @@
+"F:\CLion 2021.2.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -DCMAKE_DEPENDS_USE_COMPILER=FALSE -G "CodeBlocks - NMake Makefiles" "A:\Unipi\FDP EX\esame"
+-- Configuring done
+-- Generating done
+-- Build files have been written to: A:/Unipi/FDP EX/esame/cmake-build-debug

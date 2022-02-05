@@ -1,0 +1,2 @@
+#pragma code_page(65001)
+1 /* CREATEPROCESS_MANIFEST_RESOURCE_ID */ 24 /* RT_MANIFEST */ "A:/Unipi/FDP EX/4app2020/cmake-build-debug/CMakeFiles/4app2020.dir/embed.manifest"

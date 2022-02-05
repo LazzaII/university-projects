@@ -28,7 +28,8 @@ bool Prepagata::acquista(int imp, char *luogo) {
         penultimo = i; //qui è ancora l'ultimo
 
     i = new acquisto;
-    i->negozio = luogo;
+    i->negozio = new char [strlen(luogo)+1];
+    strcpy(i->negozio, luogo);
     i->importo = imp;
     i->pun = nullptr;
 
